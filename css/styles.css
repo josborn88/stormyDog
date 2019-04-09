@@ -1,11 +1,10 @@
 body {
 	font-family: 'Ubuntu';
+	text-align: center;
 }
 
-h1 {
+h1, h2, h3 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 3.5rem;
-	line-height: 1.5; 
 }
 
 h2 {
@@ -14,8 +13,10 @@ h2 {
 	line-height: 1.5;
 }
 
-h3 {
-	font-family: 'Montserrat', sans-serif;
+
+.big-heading {
+	font-size: 3.5rem;
+	line-height: 1.5; 
 }
 
 .container-fluid {
@@ -33,7 +34,6 @@ h3 {
 }
 
 .feature-box {
-	text-align: center;
 	padding: 5%;
 }
 
@@ -57,11 +57,16 @@ h3 {
 
 #features {
 	padding: 7% 15%;
+	background-color: white;
+	/*background-color: #fff;*/
+	position: relative;
+	z-index: 1;
 }
 
 #phone-img {
 	transform: rotate(20deg);
 	width: 60%;
+	position: absolute;
 }
 
 #title {
@@ -70,7 +75,21 @@ h3 {
 	color: #fff;
 }
 
+#title-heading {
+	text-align: left;
+}
+@media (max-width: 1028px) {
+	#title {
+		text-align: center;
+	}
 
+	#phone-img {
+		position: static;
+		transform: rotate(0deg);
+	}
+
+
+}
 /*Testimonials Section*/
 
 .carousel-item {
@@ -78,8 +97,6 @@ h3 {
 }
 
 #testimonials {
-
-	text-align: center;
 	background-color: #ff4c68;
 	color: #fff;
 }
@@ -90,10 +107,12 @@ h3 {
 	margin: 20px;
 }
 
+.what-is {
+	text-align: center;
+}
 /*Press section*/
 #press {
 	background-color: #ff4c68;
-	text-align: center;
 }
 
 .press-image{
@@ -106,10 +125,18 @@ h3 {
 .price-column {
 	padding: 3% 2%;
 }
-#pricing {
-	text-align: center;
-}
 
 #price-header{
 	margin: 20px auto; 
+}
+
+/*Footer Section*/
+#cta {
+	background-color: #ff4c68;
+	padding-top: 20px;
+}
+
+#footer {
+	background-color: #ff4c68;
+	padding-bottom: 20px;
 }
